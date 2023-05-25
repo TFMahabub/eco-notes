@@ -9,8 +9,6 @@ module.exports = {
     colors: {
       primary: "#fff",
       secondary: "#000",
-      bodyBackground: "#0e0d0a",
-      lightBackground: "#101010",
       background:{
         dark: "#0e0d0a",
         light: "#222222"
@@ -25,6 +23,7 @@ module.exports = {
         common: '.01rem',
       },
       spacing: {
+        'main-content-gap': '1.5rem',
         'common': '0.5rem',
         'common-.75': '0.75rem',
       },
