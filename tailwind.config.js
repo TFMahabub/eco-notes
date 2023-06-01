@@ -1,17 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors: {
       primary: "#fff",
-      secondary: "#000",
-      background:{
-        dark: "#0e0d0a",
-        light: "#222222"
+      secondary: {
+        dark: "#242424",
+        light: "#5C575C"
+      },
+      border: {
+        dark: '',
+        light: '#d5d5d5'
       }
     },
     extend: {
@@ -23,6 +30,8 @@ module.exports = {
         common: '.01rem',
       },
       spacing: {
+        'vertical': '0.5rem',
+        'horizontal': '0.5rem',
         'main-content-gap': '1.5rem',
         'common': '0.5rem',
         'common-.75': '0.75rem',

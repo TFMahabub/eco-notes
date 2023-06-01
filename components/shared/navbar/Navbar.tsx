@@ -1,45 +1,46 @@
-import Moon from '@/components/Icons/Moon';
 import Search from '@/components/Icons/Search';
-import Sun from '@/components/Icons/Sun';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import logo from '../../../public/assets/logo.png';
+import AuthButtons from './AuthButtons';
+import DarkMode from './DarkMode';
+import SearchBar from './SearchBar';
+import User from './User';
 
 const Navbar = () => {
 
     //state-
     const [uiTheme, setUiTheme] = useState("light")
+
+    const user = false;
     return (
-        <section className='container bg-primary'>
-            <nav className='flex items-center justify-between py-common-1'>
-                <div className='flex items-center gap-4'>
-                    <Link href={"/"}><span className='text-xl font-bold tracking-tight'>Eco Notes</span></Link>
-                    <div className='flex items-center py-1 px-common-.75 rounded-common border border-secondary/40 gap-common'>
-                        <Search moreClass="stroke-secondary fill-none h-icon-1 w-icon-1" />
-                        <label htmlFor="">
-                            <input type="text" name="" id="" placeholder='Search here' className=' w-full ring-0 outline-none text-secondary/80 font-light tracking-common placeholder:text-secondary/80  placeholder:capitalize' />
-                        </label>
+        <section className='container bg-primary border-b border-border-light'>
+            <nav className='flex items-center justify-between flex-wrap py-common-1'>
+                <div className='flex items-center gap-2 md:gap-4'>
+                    <Link href={"/"}>
+                        <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
+                    </Link>
+                    <div className='hidden md:flex items-center py-1 px-common-.75 rounded-common border border-secondary-dark gap-common'>
+                        <SearchBar />
                     </div>
+                    <Search moreClass="block md:hidden stroke-secondary-dark fill-none h-icon-2 w-icon-2" />
                 </div>
                 <div className='flex items-center gap-common'>
-                    <Link href={"/"}> <li className='list-none bg-secondary text-primary px-common-1 py-1 rounded-common'>Login</li> </Link>
-                    <Link href={"/"}> <li className='list-none border border-secondary text-secondary px-common-1 py-1 rounded-lg'>Create Account</li> </Link>
-                    <div className='cursor-pointer'>
-                        {
-                            uiTheme === 'light' &&
-                            <span
-                                onClick={() => setUiTheme("dark")}
-                            >
-                                <Moon moreClass='fill-secondary w-icon-2 h-icon-2' />
-                            </span>
-                        }
-                        {
-                            uiTheme === 'dark' &&
-                            <span
-                                onClick={() => setUiTheme("light")}
-                            >
-                                <Sun moreClass='fill-secondary w-icon-2 h-icon-2' />
-                            </span>
-                        }
+                    <AuthButtons user={user} />
+                    {
+                        user &&
+                        <div
+                            // onClick={()=>}
+                            className='h-8 w-8 bg-secondary-light rounded-full'>
+                            <User />
+                        </div>
+                    }
+                    <div className='hidden md:block cursor-pointer'>
+                        <DarkMode
+                            uiTheme={uiTheme}
+                            setUiTheme={setUiTheme}
+                        />
                     </div>
                 </div>
             </nav>
