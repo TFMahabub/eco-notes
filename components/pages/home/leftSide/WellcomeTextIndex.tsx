@@ -9,7 +9,7 @@ const WellcomeTextIndex = () => {
         <>
             <TextSecondaryTitle>Wellcome to {process.env.NEXT_PUBLIC_COMPANY_NAME}</TextSecondaryTitle>
             <DescriptionText>
-                We're a place where coders share, stay up-to-date and grow their careers.
+                We&apos;re a place where coders share&#44; stay up-to-date and grow their careers&#46;
             </DescriptionText>
             <div className='flex flex-col item-center gap-common'>
                 <ButtonPrimary>Log In</ButtonPrimary>

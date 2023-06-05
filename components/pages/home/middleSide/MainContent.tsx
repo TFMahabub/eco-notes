@@ -4,8 +4,8 @@ const MainContent = () => {
     return (
         <>
             {
-                [...Array(4)].map(() => (
-                    <BlogCart />
+                [...Array(4)].map((_, i) => (
+                    <BlogCart key={i} />
                 ))
             }
         </>
