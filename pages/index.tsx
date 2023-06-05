@@ -1,3 +1,4 @@
+import JoinDevCommunity from '@/components/pages/home/leftSide/JoinDevCommunity';
 import PopularTags from '@/components/pages/home/leftSide/PopularTags';
 import SocialMedia from '@/components/pages/home/leftSide/SocialMedia';
 import WellcomeTextIndex from '@/components/pages/home/leftSide/WellcomeTextIndex';
@@ -23,6 +24,9 @@ const index = () => {
                     </div>
                     <div className='box_area flex flex-col gap-common'>
                         <PopularTags />
+                    </div>
+                    <div className='box_area flex flex-col gap-common'>
+                        <JoinDevCommunity />
                     </div>
                 </aside>
                 <main className='col-span-12 lg:col-span-6 space-y-section-gap order-1 md:order-none'>
