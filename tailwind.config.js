@@ -17,8 +17,11 @@ module.exports = {
         light: "#5C575C"
       },
       border: {
-        dark: '',
+        dark: '#5C575C',
         light: '#d5d5d5'
+      },
+      casual:{
+        blue: '#3B49DF'
       }
     },
     extend: {
@@ -33,6 +36,7 @@ module.exports = {
         'vertical': '0.5rem',
         'horizontal': '0.5rem',
         'main-content-gap': '1.5rem',
+        'section-gap': '1.5rem',
         'common': '0.5rem',
         'common-.75': '0.75rem',
       },

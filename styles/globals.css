@@ -32,3 +32,7 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
+
+.box_area {
+  @apply bg-primary border border-border-light rounded-common p-common-1;
+}

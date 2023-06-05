@@ -1,12 +1,13 @@
 import ButtonPrimary from '@/Utils/ReUseAbleComponents/ButtonPrimary';
 import ButtonSecondary from '@/Utils/ReUseAbleComponents/ButtonSecondary';
-import DescriptionText from '@/Utils/ReUseAbleComponents/DescriptionText';
-import SecondaryTitleText from '@/Utils/ReUseAbleComponents/SecondaryTitleText';
+import DescriptionText from '@/Utils/ReUseAbleComponents/TextDescription';
+import TextSecondaryTitle from '@/Utils/ReUseAbleComponents/TextSecondaryTitle';
 
 const WellcomeTextIndex = () => {
+
     return (
         <>
-            <SecondaryTitleText>Wellcome to eco-Notes</SecondaryTitleText>
+            <TextSecondaryTitle>Wellcome to {process.env.NEXT_PUBLIC_COMPANY_NAME}</TextSecondaryTitle>
             <DescriptionText>
                 We're a place where coders share, stay up-to-date and grow their careers.
             </DescriptionText>
