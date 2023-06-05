@@ -1,3 +1,4 @@
+import PopularTags from '@/components/pages/home/leftSide/PopularTags';
 import SocialMedia from '@/components/pages/home/leftSide/SocialMedia';
 import WellcomeTextIndex from '@/components/pages/home/leftSide/WellcomeTextIndex';
 import MainContent from '@/components/pages/home/middleSide/MainContent';
@@ -19,6 +20,9 @@ const index = () => {
                     </div>
                     <div className='flex flex-wrap items-center gap-2'>
                         <SocialMedia />
+                    </div>
+                    <div className='box_area flex flex-col gap-common'>
+                        <PopularTags />
                     </div>
                 </aside>
                 <main className='col-span-12 lg:col-span-6 space-y-section-gap order-1 md:order-none'>
