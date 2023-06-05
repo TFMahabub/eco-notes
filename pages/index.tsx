@@ -15,6 +15,7 @@ const index = () => {
                 <title>Homepage</title>
             </Head>
             <main className='container mt-main-content-gap grid grid-cols-12 gap-4'>
+                {/* ----------------left-side---------------- */}
                 <aside className='col-span-12 lg:col-span-3 space-y-common-.75 order-2 md:order-none'>
                     <div className='box_area space-y-vertical'>
                         <WellcomeTextIndex />
@@ -29,6 +30,7 @@ const index = () => {
                         <JoinDevCommunity />
                     </div>
                 </aside>
+                {/* ----------------middle-side---------------- */}
                 <main className='col-span-12 lg:col-span-6 space-y-section-gap order-1 md:order-none'>
                     <div className='flex gap-common-.75'>
                         <TopMenus />
@@ -37,6 +39,7 @@ const index = () => {
                         <MainContent />
                     </div>
                 </main>
+                {/* ----------------right-side---------------- */}
                 <aside className='col-span-12 lg:col-span-3 order-3 md:order-none'>
                     <div className='box_area space-y-vertical'>
                         <Discuss />

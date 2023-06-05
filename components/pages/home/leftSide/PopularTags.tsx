@@ -39,6 +39,7 @@ const PopularTags = () => {
             {
                 tags.map((item: TagTypes) => (
                     <TextSmall
+                        key={item?.id}
                         extraClass="hover:text-secondary-dark cursor-pointer"
                     >
                         # {item?.tag}
