@@ -36,8 +36,8 @@ const BlogCart = () => {
                     </div>
                     <div className="flex flex-wrap">
                         {
-                            [...Array(4)].map(() => (
-                                <p className="px-[6px] py-[1px] hover:bg-casual-blue/10 border border-primary hover:border-casual-blue rounded-md text-casual-blue duration-200 cursor-pointer text-sm">
+                            [...Array(4)].map((_, i) => (
+                                <p key={i} className="px-[6px] py-[1px] hover:bg-casual-blue/10 border border-primary hover:border-casual-blue rounded-md text-casual-blue duration-200 cursor-pointer text-sm">
                                     #<span className="text-secondary-light hover:text-casual-blue">react</span>
                                 </p>
                             ))
