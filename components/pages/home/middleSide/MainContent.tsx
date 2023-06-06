@@ -2,13 +2,13 @@ import BlogCart from "@/components/Cart/BlogCart";
 
 const MainContent = () => {
     return (
-        <>
+        <div className="space-y-common">
             {
-                [...Array(4)].map((_, i) => (
+                [...Array(6)].map((_, i) => (
                     <BlogCart key={i} />
                 ))
             }
-        </>
+        </div>
     );
 };
 
