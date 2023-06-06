@@ -5,6 +5,7 @@ import WellcomeTextIndex from '@/components/pages/home/leftSide/WellcomeTextInde
 import MainContent from '@/components/pages/home/middleSide/MainContent';
 import TopMenus from '@/components/pages/home/middleSide/TopMenus';
 import Discuss from '@/components/pages/home/rightSide/Discuss';
+import Listings from '@/components/pages/home/rightSide/Listings';
 import Head from "next/head";
 
 
@@ -40,12 +41,12 @@ const index = () => {
                     </div>
                 </main>
                 {/* ----------------right-side---------------- */}
-                <aside className='col-span-12 lg:col-span-3 order-3 md:order-none'>
+                <aside className='col-span-12 lg:col-span-3 space-y-common-.75 order-3 md:order-none'>
+                    <div className='box_area space-y-vertical'>
+                        <Listings />
+                    </div>
                     <div className='box_area space-y-vertical'>
                         <Discuss />
-                    </div>
-                    <div className='flex flex-col gap-common-.75'>
-
                     </div>
                 </aside>
             </main>
