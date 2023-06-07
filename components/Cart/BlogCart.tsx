@@ -28,7 +28,7 @@ const BlogCart = () => {
                         <Link href={'/'}>
                             <TextSecondaryTitle
                                 onClick={(e: any) => console.log('aci')}
-                                extraClass="hover:text-casual-blue duration-200 cursor-pointer"
+                                extraClass="hover-text-color common-duration cursor-pointer"
                             >
                                 How does participating in hackathons & competitions skyrocket my career in 2022?
                             </TextSecondaryTitle>
@@ -37,8 +37,8 @@ const BlogCart = () => {
                     <div className="flex flex-wrap">
                         {
                             [...Array(4)].map((_, i) => (
-                                <p key={i} className="px-[6px] py-[1px] hover:bg-casual-blue/10 border border-primary hover:border-casual-blue rounded-md text-casual-blue duration-200 cursor-pointer text-sm">
-                                    #<span className="text-secondary-light hover:text-casual-blue">react</span>
+                                <p key={i} className=" px-[6px] py-[1px] hover:bg-technologyColor-react/10 border border-primary/0 hover:border-technologyColor-react rounded-md text-technologyColor-react common-duration cursor-pointer text-sm group common-duration">
+                                    #<span className="small-text-color group-hover:text-technologyColor-react common-duration">react</span>
                                 </p>
                             ))
                         }
@@ -48,7 +48,7 @@ const BlogCart = () => {
                         <div
                             className="flex gap-common items-center hover:bg-secondary-light/10 md:py-1 md:px-2 md:rounded-md md:cursor-pointer"
                         >
-                            <RiChatNewLine className="text-secondary-light text-lg" />
+                            <RiChatNewLine className="small-text-color text-lg" />
                             <TextSmall>Add Comment</TextSmall>
                         </div>
                         <div className="flex items-center gap-common">

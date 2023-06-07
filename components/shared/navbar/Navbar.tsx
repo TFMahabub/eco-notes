@@ -1,7 +1,6 @@
-import Search from '@/components/Icons/Search';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { RiSearchLine } from 'react-icons/ri';
 import logo from '../../../public/assets/logo.png';
 import AuthButtons from './AuthButtons';
 import DarkMode from './DarkMode';
@@ -10,21 +9,20 @@ import User from './User';
 
 const Navbar = () => {
 
-    //state-
-    const [uiTheme, setUiTheme] = useState("light")
+
 
     const user = false;
     return (
-        <section className='container bg-primary border-b border-border-light'>
-            <nav className='flex items-center justify-between flex-wrap py-common-1'>
+        <section className='bg-primary dark:bg-darkMode-contentBG border-b box-border-color'>
+            <nav className='container flex items-center justify-between flex-wrap py-common-1'>
                 <div className='flex items-center gap-2 md:gap-4'>
                     <Link href={"/"}>
                         <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
                     </Link>
-                    <div className='hidden md:flex items-center py-1 px-common-.75 rounded-common border border-secondary-dark gap-common'>
+                    <div className='hidden md:flex items-center py-1 px-common-.75 rounded-common border border-color gap-common'>
                         <SearchBar />
                     </div>
-                    <Search moreClass="block md:hidden stroke-secondary-dark fill-none h-icon-2 w-icon-2" />
+                    <RiSearchLine className='block md:hidden text-secondary-dark dark:text-darkMode-textSecondaryColor text-2xl' />
                 </div>
                 <div className='flex items-center gap-common'>
                     <AuthButtons user={user} />
@@ -37,10 +35,7 @@ const Navbar = () => {
                         </div>
                     }
                     <div className='hidden md:block cursor-pointer'>
-                        <DarkMode
-                            uiTheme={uiTheme}
-                            setUiTheme={setUiTheme}
-                        />
+                        <DarkMode />
                     </div>
                 </div>
             </nav>

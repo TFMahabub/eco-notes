@@ -26,7 +26,7 @@ const TopMenus = () => {
                     <h4
                         onClick={() => dispatch(setFilter(item?.name))}
                         key={item?.id}
-                        className={`text-lg font-medium capitalize hover:text-secondary-dark cursor-pointer ${value === item?.name ? "border-b-2 border-border-dark text-secondary-dark" : "text-secondary-light"}`}
+                        className={`text-lg font-medium capitalize hover:text-secondary-dark cursor-pointer ${value === item?.name ? "border-b-2 border-border-dark dark:border-darkMode-textPrimaryColor text-secondary-dark dark:text-darkMode-textPrimaryColor" : "text-secondary-light dark:text-darkMode-textSecondaryColor"}`}
                     >
                         {item?.name}
                     </h4>

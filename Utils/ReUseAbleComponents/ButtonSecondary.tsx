@@ -9,7 +9,7 @@ const ButtonSecondary = ({ children, ...attributes }: PropsType) => {
     return (
         <button
             {...attributes}
-            className='list-none border text-sm md:text-base border-secondary-dark text-secondary-dark px-common-1 py-1 rounded-lg'>
+            className='list-none border border-color text-sm md:text-base text-secondary-dark dark:text-darkMode-textPrimaryColor px-common-1 py-1 rounded-lg'>
             {children}
         </button>
     );

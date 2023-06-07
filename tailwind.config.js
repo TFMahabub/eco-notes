@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', //media - device     class - custom
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,11 +18,23 @@ module.exports = {
         light: "#5C575C"
       },
       border: {
-        dark: '#5C575C',
+        dark: '#3e3e3e',
         light: '#d5d5d5'
       },
-      casual:{
-        blue: '#3B49DF'
+      darkMode: {
+        bodyBG: '#242424',
+        contentBG: '#000000',
+        buttonBG: '#242424',
+        border: '#3e3e3e',
+        textPrimaryColor: '#e3e3e3',
+        textSecondaryColor: '#979797',
+      },
+      textHover: {
+        dark: '#3B49DF',
+        light: '#3B49DF'
+      },
+      technologyColor: {
+        react: '#00D9FE'
       }
     },
     extend: {
