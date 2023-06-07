@@ -9,8 +9,8 @@ const Listings = () => {
             <div className="space-y-common-.75">
                 {
                     [...Array(3)].map((_, i) => (
-                        <div key={i} className="border-b border-border-light cursor-pointer pb-4 last:border-0">
-                            <TextDescription extraClass="hover:text-casual-blue">
+                        <div key={i} className="border-b box-border-color cursor-pointer pb-4 last:border-0">
+                            <TextDescription extraClass="hover-text-color common-duration">
                                 New Relic is making an investment in the future of digital access | $100k in grants!
                             </TextDescription>
                             <TextSmall extraClass="">

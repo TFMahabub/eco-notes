@@ -1,5 +1,5 @@
+import TextDescription from "@/Utils/ReUseAbleComponents/TextDescription";
 import TextSecondaryTitle from "@/Utils/ReUseAbleComponents/TextSecondaryTitle";
-import TextSmall from "@/Utils/ReUseAbleComponents/TextSmall";
 
 interface TagTypes {
     id: number;
@@ -38,12 +38,12 @@ const PopularTags = () => {
             <TextSecondaryTitle>#Popular Tags</TextSecondaryTitle>
             {
                 tags.map((item: TagTypes) => (
-                    <TextSmall
+                    <TextDescription
                         key={item?.id}
-                        extraClass="hover:text-secondary-dark cursor-pointer"
+                        extraClass="hover-text-color common-duration cursor-pointer"
                     >
                         # {item?.tag}
-                    </TextSmall>
+                    </TextDescription>
                 ))
             }
         </>

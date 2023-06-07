@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-darkMode-bodyBG;
+  }
+}
+
 :root {
   --primary-color: "#dd5903";
   --secondary-color: "#000";
@@ -32,7 +38,25 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
-
 .box_area {
-  @apply bg-primary border border-border-light rounded-common p-common-1;
+  @apply bg-primary dark:bg-darkMode-contentBG border box-border-color rounded-common p-common-1;
+}
+
+.common-duration {
+  @apply duration-200;
+}
+.hover-text-color {
+  @apply hover:text-textHover-dark dark:hover:text-textHover-dark;
+}
+.content-border-color {
+  @apply border-border-dark dark:border-darkMode-border;
+}
+.box-border-color {
+  @apply border-border-light dark:border-darkMode-border;
+}
+.secondary-text-color {
+  @apply text-secondary-dark dark:text-darkMode-textPrimaryColor;
+}
+.small-text-color {
+  @apply text-secondary-light dark:text-darkMode-textSecondaryColor;
 }

@@ -8,7 +8,7 @@ interface Props {
 const TextSecondaryTitle = ({ children, extraClass, ...atribute }: Props) => {
     return (
         <h5
-            className={`font-semibold text-[1.125rem] md:text-[1.25rem] text-secondary-dark leading-6 md:leading-7 ${extraClass}`}
+            className={`font-semibold text-[1.125rem] md:text-[1.25rem] secondary-text-color leading-6 md:leading-7 ${extraClass}`}
             {...atribute}
         >
             {children}

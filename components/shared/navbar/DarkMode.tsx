@@ -1,24 +1,35 @@
-import Moon from '@/components/Icons/Moon';
-import Sun from '@/components/Icons/Sun';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+import { RiMoonFill, RiSunFill } from 'react-icons/ri';
 
-const DarkMode = ({ uiTheme, setUiTheme }: { uiTheme: string, setUiTheme: any }) => {
+const DarkMode = () => {
+
+    const [mount, setMount] = useState(false)
+    const { systemTheme, theme, setTheme } = useTheme()
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    useEffect(() => {
+        setMount(true)
+    }, [])
+
+    if (!mount) return null;
     return (
         <>
             {
-                uiTheme === 'light' &&
-                <span
-                    onClick={() => setUiTheme("dark")}
+                currentTheme === 'light' &&
+                <div
+                    onClick={() => setTheme("dark")}
                 >
-                    <Moon moreClass='fill-secondary-dark w-icon-2 h-icon-2' />
-                </span>
+                    <RiMoonFill className='text-secondary-dark text-2xl' />
+                </div>
             }
             {
-                uiTheme === 'dark' &&
-                <span
-                    onClick={() => setUiTheme("light")}
+                currentTheme === 'dark' &&
+                <div
+                    onClick={() => setTheme("light")}
                 >
-                    <Sun moreClass='fill-secondary-dark w-icon-2 h-icon-2' />
-                </span>
+                    <RiSunFill className='text-darkMode-textPrimaryColor text-2xl' />
+                </div>
             }
         </>
     );
