@@ -1,42 +1,58 @@
+import { RootState } from '@/app/store';
+import HamburgerMenu from '@/components/Icons/HamburgerMenu';
+import XButton from '@/components/Icons/XButton';
+import { setHamburgerMenu } from '@/features/NavbarSlice/NavBarSlice';
 import Image from 'next/image';
 import Link from 'next/link';
-import { RiSearchLine } from 'react-icons/ri';
+import { useDispatch, useSelector } from 'react-redux';
 import logo from '../../../public/assets/logo.png';
-import AuthButtons from './AuthButtons';
-import DarkMode from './DarkMode';
+import BigScreenMenus from './BigScreenMenus';
 import SearchBar from './SearchBar';
-import User from './User';
+import SmallScreenMenus from './SmallScreenMenus';
 
 const Navbar = () => {
+    const {
+        hamburgerMenu,
+        searchMenu
+    } = useSelector((state: RootState) => state.NavbarSlice)
+    const dispatch = useDispatch();
+    console.log(searchMenu);
 
 
-
-    const user = false;
+    const user = true;
     return (
         <section className='bg-primary dark:bg-darkMode-contentBG border-b box-border-color'>
-            <nav className='container flex items-center justify-between flex-wrap py-common-1'>
-                <div className='flex items-center gap-2 md:gap-4'>
-                    <Link href={"/"}>
-                        <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
-                    </Link>
-                    <div className='hidden md:flex items-center py-1 px-common-.75 rounded-common border border-color gap-common'>
-                        <SearchBar />
-                    </div>
-                    <RiSearchLine className='block md:hidden text-secondary-dark dark:text-darkMode-textSecondaryColor text-2xl' />
-                </div>
-                <div className='flex items-center gap-common'>
-                    <AuthButtons user={user} />
-                    {
-                        user &&
-                        <div
-                            // onClick={()=>}
-                            className='h-8 w-8 bg-secondary-light rounded-full'>
-                            <User />
+            <nav className='container'>
+                <div className='flex items-center justify-between flex-wrap py-common-1'>
+                    <div className='flex items-center gap-2 md:gap-4'>
+                        <Link href={"/"}>
+                            <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
+                        </Link>
+                        <div className='flex items-center py-[2px] md:py-1 px-common-.75 rounded-common border border-color gap-common w-36 md:w-full'>
+                            <SearchBar />
                         </div>
-                    }
-                    <div className='hidden md:block cursor-pointer'>
-                        <DarkMode />
                     </div>
+                    <div className='flex items-center gap-common'>
+                        <BigScreenMenus
+                            user={user}
+                        />
+                        {/* -----------common-menus----------- */}
+                        <div
+                            onClick={() => dispatch(setHamburgerMenu())}
+                            className='cursor-pointer md:hidden'
+                        >
+                            {!hamburgerMenu && <HamburgerMenu />}
+                            {hamburgerMenu && <XButton />}
+                        </div>
+                        {/* -----------common-menus----------- */}
+                    </div>
+                </div>
+                <div
+                    className={`transform transition-all duration-300 ease-linear ${hamburgerMenu ? "flex flex-col items-center gap-common lg:hidden pb-common-1" : "hidden h-0"}`}
+                >
+                    <SmallScreenMenus
+                        user={user}
+                    />
                 </div>
             </nav>
         </section >
