@@ -38,7 +38,7 @@ const BlogCart = () => {
                         {
                             [...Array(4)].map((_, i) => (
                                 <p key={i} className=" px-[6px] py-[1px] hover:bg-technologyColor-react/10 border border-primary/0 hover:border-technologyColor-react rounded-md text-technologyColor-react common-duration cursor-pointer text-sm group common-duration">
-                                    #<span className="small-text-color group-hover:text-technologyColor-react common-duration">react</span>
+                                    #<span className="small-text-color">react</span>
                                 </p>
                             ))
                         }
