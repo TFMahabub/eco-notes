@@ -13,29 +13,29 @@ const ProfileMenus = () => {
     const { theme, setTheme } = useTheme()
     return (
         <>
-            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
+            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
                 <Profile />
                 <TextMenuItem>Profile</TextMenuItem>
             </Link>
-            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
+            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
                 <Notification />
                 <TextMenuItem>Notification</TextMenuItem>
             </Link>
-            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
+            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
                 <Bookmark />
                 <TextMenuItem>Bookmark</TextMenuItem>
             </Link>
-            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
+            <Link href={'/'} className='flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
                 <Announcement />
                 <TextMenuItem>Announcement</TextMenuItem>
             </Link>
-            <button className='w-full flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
+            <button className='w-full flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'>
                 <Logout />
                 <TextMenuItem>Logout</TextMenuItem>
             </button>
             <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className='w-full flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/5 dark:hover:bg-primary/10 transform transition ease-linear duration-100'
+                className='w-full flex items-center gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100'
             >
                 {theme === 'light' && <Moon />}
                 {theme === 'dark' && <Sun />}
