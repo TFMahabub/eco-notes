@@ -11,8 +11,10 @@ const BigScreenMenus = ({ user }: { user: boolean }) => {
     const { profileMenu } = useSelector((state: RootState) => state.NavbarSlice)
     const dispatch = useDispatch();
 
+    // const body = document.getElementsByTagName('body')
+    // body.addEve
     return (
-        <div className="relative hidden md:flex gap-common items-center">
+        <div className="md:relative hidden md:flex md:gap-common-.75 md:items-center">
             {
                 !user &&
                 <>
@@ -38,7 +40,7 @@ const BigScreenMenus = ({ user }: { user: boolean }) => {
                 <DarkMode />
             </div>
             <div
-                className={`hidden ${profileMenu ? "md:flex flex-col items-center gap-common-.75 absolute top-9 right-7 w-52 h-52 bg-primary dark:bg-darkMode-contentBG overflow-y-auto border border-border-dark" : "md:hidden"}`}
+                className={`hidden ${profileMenu ? "md:flex flex-col items-center gap-common-.75 absolute top-9 right-7 w-52 h-52 bg-primary dark:bg-darkMode-contentBG overflow-y-auto border box-border-color rounded-lg" : "md:hidden"}`}
             >
                 <div className="w-full">
                     <ProfileMenus />
