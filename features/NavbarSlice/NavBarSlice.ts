@@ -3,11 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 interface InitialStateTypes {
   hamburgerMenu: boolean;
   searchMenu: boolean;
+  profileMenu: boolean;
 }
 
 const initialState: InitialStateTypes = {
   hamburgerMenu: false,
   searchMenu: false,
+  profileMenu: false,
 };
 
 const NavbarSlice = createSlice({
@@ -20,9 +22,13 @@ const NavbarSlice = createSlice({
     setSearchMenu: (state) => {
       state.searchMenu = !state.searchMenu;
     },
+    setProfileMenu: (state) => {
+      state.profileMenu = !state.profileMenu;
+    },
   },
 });
 
-export const { setHamburgerMenu, setSearchMenu } = NavbarSlice.actions;
+export const { setHamburgerMenu, setSearchMenu, setProfileMenu } =
+  NavbarSlice.actions;
 
 export default NavbarSlice.reducer;

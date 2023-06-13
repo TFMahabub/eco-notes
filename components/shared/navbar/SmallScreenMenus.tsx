@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProfileMenus from './ProfileMenus';
 
 const SmallScreenMenus = ({ user }: { user: boolean }) => {
     return (
@@ -14,14 +15,9 @@ const SmallScreenMenus = ({ user }: { user: boolean }) => {
             }
             {
                 user &&
-                <>
-                    {/* user-menus */}
-                    <button
-                        className='bg-secondary-dark dark:bg-darkMode-buttonBG text-sm md:text-base border border-color text-primary dark:text-darkMode-textPrimaryColor px-common-1 py-1 rounded-common w-full text-center'
-                    >
-                        Sign out
-                    </button>
-                </>
+                <div className="w-full">
+                    <ProfileMenus />
+                </div>
             }
         </>
     );

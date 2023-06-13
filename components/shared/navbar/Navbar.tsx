@@ -11,12 +11,8 @@ import SearchBar from './SearchBar';
 import SmallScreenMenus from './SmallScreenMenus';
 
 const Navbar = () => {
-    const {
-        hamburgerMenu,
-        searchMenu
-    } = useSelector((state: RootState) => state.NavbarSlice)
+    const { hamburgerMenu } = useSelector((state: RootState) => state.NavbarSlice)
     const dispatch = useDispatch();
-    console.log(searchMenu);
 
 
     const user = true;
