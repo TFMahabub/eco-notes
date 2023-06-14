@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import TextMenuItem from '../../../Utils/ReUseAbleComponents/TextMenuItem';
+import Login from '../../Icons/Login';
+import DarkModeSmallScreen from './DarkModeSmallScreen';
 import ProfileMenus from './ProfileMenus';
 
 const SmallScreenMenus = ({ user }: { user: boolean }) => {
@@ -6,12 +9,18 @@ const SmallScreenMenus = ({ user }: { user: boolean }) => {
         <>
             {
                 !user &&
-                <Link
-                    href={"/"}
-                    className='bg-secondary-dark dark:bg-darkMode-buttonBG text-sm md:text-base border border-color text-primary dark:text-darkMode-textPrimaryColor px-common-1 py-1 rounded-common w-full text-center'
-                >
-                    Log in
-                </Link>
+                <>
+                    <Link
+                        href={"/"}
+                        className='flex items-center gap-common w-full px-common-1'
+                    >
+                        <Login />
+                        <TextMenuItem>
+                            Log in
+                        </TextMenuItem>
+                    </Link>
+                    <DarkModeSmallScreen />
+                </>
             }
             {
                 user &&

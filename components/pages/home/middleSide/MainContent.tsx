@@ -1,4 +1,4 @@
-import BlogCart from "@/components/Cart/BlogCart";
+import BlogCart from "../../../Cart/BlogCart";
 
 const MainContent = () => {
     return (

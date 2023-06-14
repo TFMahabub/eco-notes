@@ -65,6 +65,9 @@ module.exports = {
         'icon-1': '1.2rem',
         'icon-2': '1.4rem',
       },
+      height: {
+        'navbar-height': '64px',
+      },
       backgroundImage: {
         'banner_background_image': "url('../public/assats/bannerImage.jpg')",
       }

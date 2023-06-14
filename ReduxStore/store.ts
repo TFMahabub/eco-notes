@@ -1,10 +1,10 @@
-import BlogFilter from "@/features/BlogFilter/BlogFilterSlice";
-import NavBarSlice from "@/features/NavbarSlice/NavBarSlice";
 import { configureStore } from "@reduxjs/toolkit";
+import BlogFilterSlice from "../features/BlogFilter/BlogFilterSlice";
+import NavBarSlice from "../features/NavbarSlice/NavBarSlice";
 
 export const store = configureStore({
   reducer: {
-    BlogFilter: BlogFilter,
+    BlogFilter: BlogFilterSlice,
     NavbarSlice: NavBarSlice,
   },
 });

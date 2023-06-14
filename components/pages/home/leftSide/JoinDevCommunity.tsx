@@ -1,5 +1,5 @@
-import TextSmall from "@/Utils/ReUseAbleComponents/TextSmall";
 import Image from "next/image";
+import TextSmall from "../../../../Utils/ReUseAbleComponents/TextSmall";
 import devCommunity from "../../../../public/assets/dev-community.png";
 
 const JoinDevCommunity = () => {

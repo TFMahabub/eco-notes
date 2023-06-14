@@ -1,10 +1,12 @@
-import TextExtraSmall from "@/Utils/ReUseAbleComponents/TextExtraSmall";
-import TextSecondaryTitle from "@/Utils/ReUseAbleComponents/TextSecondaryTitle";
-import TextSmall from "@/Utils/ReUseAbleComponents/TextSmall";
+
 import Image from "next/image";
 import Link from "next/link";
-import { RiBookmarkLine, RiChatNewLine } from "react-icons/ri";
+import TextExtraSmall from "../../Utils/ReUseAbleComponents/TextExtraSmall";
+import TextSecondaryTitle from "../../Utils/ReUseAbleComponents/TextSecondaryTitle";
+import TextSmall from "../../Utils/ReUseAbleComponents/TextSmall";
 import profileImage from '../../public/assets/profile.jpg';
+import Bookmark from "../Icons/Bookmark";
+import ChatIcon from "../Icons/ChatIcon";
 import TagCart from "./TagCart";
 
 const BlogCart = () => {
@@ -45,14 +47,19 @@ const BlogCart = () => {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-common">
                         {/* ---------add-comments--------- */}
                         <div
+                            title="Add a comment"
                             className="flex gap-common items-center hover:bg-secondary-light/10 md:py-1 md:px-2 md:rounded-md md:cursor-pointer"
                         >
-                            <RiChatNewLine className="small-text-color text-lg" />
+                            <ChatIcon />
                             <TextSmall>Add Comment</TextSmall>
                         </div>
                         <div className="flex items-center gap-common">
                             <TextExtraSmall>6 min ago</TextExtraSmall>
-                            <RiBookmarkLine className="text-secondary-light text-[26px] p-1 cursor-pointer hover:bg-secondary-light/10" />
+                            <span
+                                title="save this"
+                                className="hover:bg-secondary-light/10 duration-200 p-1 rounded-md cursor-pointer">
+                                <Bookmark />
+                            </span>
                         </div>
                     </div>
                 </div>

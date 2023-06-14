@@ -1,7 +1,7 @@
-import TextExtraSmall from '@/Utils/ReUseAbleComponents/TextExtraSmall';
-import TextMenuItem from '@/Utils/ReUseAbleComponents/TextMenuItem';
-import profileImage from '@/public/assets/profile.jpg';
 import Image from 'next/image';
+import TextExtraSmall from '../../../Utils/ReUseAbleComponents/TextExtraSmall';
+import TextMenuItem from '../../../Utils/ReUseAbleComponents/TextMenuItem';
+import profileImage from '../../../public/assets/profile.jpg';
 
 const UserInfoTopMenu = () => {
     return (

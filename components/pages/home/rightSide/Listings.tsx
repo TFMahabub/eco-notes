@@ -1,6 +1,6 @@
-import TextDescription from "@/Utils/ReUseAbleComponents/TextDescription";
-import TextSecondaryTitle from "@/Utils/ReUseAbleComponents/TextSecondaryTitle";
-import TextSmall from "@/Utils/ReUseAbleComponents/TextSmall";
+import TextDescription from "../../../../Utils/ReUseAbleComponents/TextDescription";
+import TextSecondaryTitle from "../../../../Utils/ReUseAbleComponents/TextSecondaryTitle";
+import TextSmall from "../../../../Utils/ReUseAbleComponents/TextSmall";
 
 const Listings = () => {
     return (

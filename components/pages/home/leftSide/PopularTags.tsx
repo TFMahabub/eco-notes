@@ -1,5 +1,5 @@
-import TextDescription from "@/Utils/ReUseAbleComponents/TextDescription";
-import TextSecondaryTitle from "@/Utils/ReUseAbleComponents/TextSecondaryTitle";
+import TextDescription from "../../../../Utils/ReUseAbleComponents/TextDescription";
+import TextSecondaryTitle from "../../../../Utils/ReUseAbleComponents/TextSecondaryTitle";
 
 interface TagTypes {
     id: number;

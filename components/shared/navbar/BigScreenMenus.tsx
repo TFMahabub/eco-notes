@@ -1,8 +1,9 @@
-import ButtonPrimary from "@/Utils/ReUseAbleComponents/ButtonPrimary";
-import { RootState } from "@/app/store";
-import { setProfileMenu } from "@/features/NavbarSlice/NavBarSlice";
+
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../../ReduxStore/store";
+import ButtonPrimary from "../../../Utils/ReUseAbleComponents/ButtonPrimary";
+import { setProfileMenu } from "../../../features/NavbarSlice/NavBarSlice";
 import DarkMode from "./DarkMode";
 import ProfileMenus from "./ProfileMenus";
 import User from "./User";
