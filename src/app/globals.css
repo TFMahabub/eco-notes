@@ -42,8 +42,14 @@ body {
   @apply bg-primary dark:bg-darkMode-contentBG border box-border-color rounded-common p-common-1;
 }
 
+.after-navbar-section-height {
+  @apply h-[calc(100vh-64px)];
+}
 .common-duration {
   @apply duration-200;
+}
+.content-bg {
+  @apply bg-primary dark:bg-darkMode-contentBG;
 }
 .hover-text-color {
   @apply hover:text-textHover-dark dark:hover:text-textHover-dark;
@@ -59,4 +65,13 @@ body {
 }
 .small-text-color {
   @apply text-secondary-light dark:text-darkMode-textSecondaryColor;
+}
+
+/* ---------------specific-tag-class--------------- */
+.navbar-profile-menu-item {
+  @apply flex items-center justify-start gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100 tracking-wide;
+}
+/* my-profile-route-specific-class */
+.my-profile-sidebar-class {
+  @apply bg-primary dark:bg-darkMode-contentBG h-[calc(100vh-64px)] overflow-y-auto;
 }

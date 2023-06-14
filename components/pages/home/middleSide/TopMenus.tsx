@@ -1,6 +1,6 @@
-import { RootState } from "@/app/store";
-import { setFilter } from '@/features/BlogFilter/BlogFilterSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../../ReduxStore/store';
+import { setFilter } from '../../../../features/BlogFilter/BlogFilterSlice';
 
 interface Menu {
     id: number;

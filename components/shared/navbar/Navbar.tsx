@@ -1,11 +1,12 @@
-import { RootState } from '@/app/store';
-import HamburgerMenu from '@/components/Icons/HamburgerMenu';
-import XButton from '@/components/Icons/XButton';
-import { setHamburgerMenu } from '@/features/NavbarSlice/NavBarSlice';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../ReduxStore/store';
+import { setHamburgerMenu } from '../../../features/NavbarSlice/NavBarSlice';
 import logo from '../../../public/assets/logo.png';
+import HamburgerMenu from '../../Icons/HamburgerMenu';
+import XButton from '../../Icons/XButton';
 import BigScreenMenus from './BigScreenMenus';
 import SearchBar from './SearchBar';
 import SmallScreenMenus from './SmallScreenMenus';
@@ -17,9 +18,9 @@ const Navbar = () => {
 
     const user = true;
     return (
-        <section className='bg-primary dark:bg-darkMode-contentBG border-b box-border-color'>
+        <section className={`bg-primary dark:bg-darkMode-contentBG border-b box-border-color md:flex md:items-center md:h-navbar-height py-common-1 md:py-0`}>
             <nav className='container'>
-                <div className='flex items-center justify-between flex-wrap py-common-1'>
+                <div className='flex items-center justify-between flex-wrap'>
                     <div className='flex items-center gap-2 md:gap-4'>
                         <Link href={"/"}>
                             <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
