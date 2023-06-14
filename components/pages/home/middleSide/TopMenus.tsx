@@ -10,7 +10,7 @@ interface Menu {
 const TopMenus = () => {
     const { value } = useSelector((state: RootState) => state.BlogFilter)
     const dispatch = useDispatch();
-    console.log(value);
+    // console.log(value);
 
 
     const topMenus = [
