@@ -40,9 +40,7 @@ const BlogCart = () => {
                         </Link>
                     </div>
                     <div className="flex flex-wrap">
-                        {
-                            [...Array(4)].map((_, i) => <TagCart key={i} />)
-                        }
+                        <TagCart />
                     </div>
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-common">
                         {/* ---------add-comments--------- */}

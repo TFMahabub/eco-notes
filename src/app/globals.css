@@ -43,7 +43,7 @@ body {
 }
 
 .after-navbar-section-height {
-  @apply h-[calc(100vh-64px)];
+  @apply h-[calc(100vh-88px)];
 }
 .common-duration {
   @apply duration-200;

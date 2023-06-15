@@ -18,25 +18,25 @@ const RootSidebarAllMenus = () => {
 
     return (
         <>
-            <Link href={profile} >
+            <Link href={'/my_profile/profile'} >
                 <div className={`navbar-profile-menu-item ${pathname === profile ? "bg-secondary-dark/10 dark:bg-primary/10" : ""}`}>
                     <Profile />
                     <TextMenuItem>Profile</TextMenuItem>
                 </div>
             </Link>
-            <Link href={notification} >
+            <Link href={'/my_profile/notification'} >
                 <div className={`navbar-profile-menu-item ${pathname === notification ? "bg-secondary-dark/10 dark:bg-primary/10" : ""}`}>
                     <Notification />
                     <TextMenuItem>Notification</TextMenuItem>
                 </div>
             </Link>
-            <Link href={bookmark} >
+            <Link href={'/my_profile/bookmark'} >
                 <div className={`navbar-profile-menu-item ${pathname === bookmark ? "bg-secondary-dark/10 dark:bg-primary/10" : ""}`}>
                     <Bookmark />
                     <TextMenuItem>Bookmark</TextMenuItem>
                 </div>
             </Link>
-            <Link href={announcement} >
+            <Link href={'/my_profile/announcement'} >
                 <div className={`navbar-profile-menu-item ${pathname === announcement ? "bg-secondary-dark/10 dark:bg-primary/10" : ""}`}>
                     <Announcement />
                     <TextMenuItem>Announcement</TextMenuItem>
