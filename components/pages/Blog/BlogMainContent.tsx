@@ -4,6 +4,7 @@ import blogImage from '../../../public/assets/single_blog.png';
 import BlogMainBlogPart from "./BlogMainBlogPart";
 import CommentBox from "./CommentBox";
 import ProfileImage from "./ProfileImage";
+import SingleComment from "./SingleComment";
 import UserInfo from "./UserInfo";
 
 const BlogMainContent = () => {
@@ -32,7 +33,7 @@ const BlogMainContent = () => {
                 </div>
                 {/* ----------main-content---------- */}
                 <div
-                    className="flex flex-col gap-common-.75 border-b border-border-light pb-6"
+                    className="flex flex-col gap-common-.75 border-b border-border-light dark:border-darkMode-border pb-6"
                 >
                     <BlogMainBlogPart />
                 </div>
@@ -41,7 +42,7 @@ const BlogMainContent = () => {
                     className="space-y-common-.75"
                 >
                     <TextSecondaryTitle>
-                        Right a comment
+                        Add a comment
                     </TextSecondaryTitle>
                     <div
                         className="flex gap-common-.75"
@@ -50,7 +51,14 @@ const BlogMainContent = () => {
                         <CommentBox />
                     </div>
                 </div>
-                {/* ----------comments-part---------- */}
+                {/* ----------all-comments---------- */}
+                <div
+                    className="flex flex-col gap-common-.75"
+                >
+                    <SingleComment />
+                    <SingleComment />
+                    <SingleComment />
+                </div>
             </div>
         </>
     );
