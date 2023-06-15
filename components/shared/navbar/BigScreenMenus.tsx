@@ -20,7 +20,7 @@ const BigScreenMenus = ({ user }: { user: boolean }) => {
                 !user &&
                 <>
                     <Link
-                        href={"/"}
+                        href={"/login"}
                         className=''
                     >
                         <ButtonPrimary>

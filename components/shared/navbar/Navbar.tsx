@@ -1,4 +1,4 @@
-
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,7 +15,6 @@ const Navbar = () => {
     const { hamburgerMenu } = useSelector((state: RootState) => state.NavbarSlice)
     const dispatch = useDispatch();
 
-
     const user = true;
     return (
         <section className={`bg-primary dark:bg-darkMode-contentBG border-b box-border-color md:flex md:items-center md:h-navbar-height py-common-1 md:py-0`}>
@@ -23,7 +22,13 @@ const Navbar = () => {
                 <div className='flex items-center justify-between flex-wrap'>
                     <div className='flex items-center gap-2 md:gap-4'>
                         <Link href={"/"}>
-                            <Image src={logo} className='md:w-full md:h-full' height={30} width={40} alt='' />
+                            <Image
+                                src={logo}
+                                className='md:w-full md:h-full'
+                                height={30}
+                                width={40}
+                                alt=''
+                            />
                         </Link>
                         <div className='flex items-center py-[2px] md:py-1 px-common-.75 rounded-common border border-color gap-common w-36 md:w-full'>
                             <SearchBar />

@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import TextMenuItem from '../../../Utils/ReUseAbleComponents/TextMenuItem';
@@ -8,7 +9,6 @@ import Profile from '../../Icons/Profile';
 
 const RootSidebarAllMenus = () => {
     const pathname = usePathname()
-    console.log(pathname);
 
     //path names-
     const profile = '/my_profile/profile'

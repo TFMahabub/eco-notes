@@ -1,4 +1,4 @@
-
+'use client'
 const page = ({ params }: { params: { id: string } }) => {
     return (
         <div>
