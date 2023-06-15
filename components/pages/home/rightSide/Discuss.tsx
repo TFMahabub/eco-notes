@@ -7,16 +7,12 @@ const Discuss = () => {
         <>
             <TextSecondaryTitle>#discuss</TextSecondaryTitle>
             <div className="space-y-common-.75">
-                {
-                    [...Array(10)].map((_, i) => (
-                        <div key={i} className="border-b box-border-color cursor-pointer pb-4 last:border-0">
-                            <TextDescription extraClass="hover-text-color common-duration">
-                                What&apos;s your initial reaction to Apple Vision Pro?
-                            </TextDescription>
-                            <TextSmall extraClass="">collabs</TextSmall>
-                        </div>
-                    ))
-                }
+                <div className="border-b box-border-color cursor-pointer pb-4 last:border-0">
+                    <TextDescription extraClass="hover-text-color common-duration">
+                        What&apos;s your initial reaction to Apple Vision Pro?
+                    </TextDescription>
+                    <TextSmall extraClass="">collabs</TextSmall>
+                </div>
             </div>
         </>
     );
