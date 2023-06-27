@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const user = true;
     return (
-        <section className={`bg-primary dark:bg-darkMode-contentBG border-b box-border-color md:flex md:items-center md:h-navbar-height py-common-1 md:py-0`}>
+        <section className={`bg-primary dark:bg-darkMode-contentBG border-b box-border-color md:flex md:items-center md:justify-between md:h-navbar-height py-common-1 md:py-0`}>
             <nav className='container'>
                 <div className='flex items-center justify-between flex-wrap'>
                     <div className='flex items-center gap-2 md:gap-4'>

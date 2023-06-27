@@ -11,6 +11,12 @@
   }
 }
 
+@layer components {
+  .bgPrimary {
+    @apply bg-primary dark:bg-darkMode-contentBG;
+  }
+}
+
 :root {
   --primary-color: "#dd5903";
   --secondary-color: "#000";
@@ -39,7 +45,7 @@ body {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
 .box_area {
-  @apply bg-primary dark:bg-darkMode-contentBG border box-border-color rounded-common p-common-1;
+  @apply bgPrimary border box-border-color rounded-common p-common-1;
 }
 
 .after-navbar-section-height {
