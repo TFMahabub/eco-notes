@@ -20,7 +20,7 @@ const NavLink = ({
   return (
     <Link
       href={`${pathname}?${appendParams(appendedItem.key, appendedItem.value)}`}
-      className={`hover:text-textHover-dark hover:bg-primary duration-200 rounded-md py-2 px-6 capitalize ${
+      className={`hover:text-textHover-dark hover:bg-primary dark:hover:bg-darkMode-contentBG duration-200 rounded-md py-2 px-6 capitalize ${
         isActive && "bg-primary dark:bg-darkMode-contentBG text-textHover-light"
       }`}
     >
