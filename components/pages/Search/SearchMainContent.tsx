@@ -5,7 +5,9 @@ import BlogCart from "../../Cart/BlogCart";
 const SearchMainContent = () => {
   const searchParams = useSearchParams();
   const text = searchParams.get("text");
-  // console.log(text);
+  const category = searchParams.get("category");
+  console.log(text);
+  console.log(category);
 
   return (
     <div className="space-y-common-.75">
