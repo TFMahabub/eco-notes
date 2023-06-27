@@ -9,6 +9,8 @@ const SearchBar = () => {
   useEffect(() => {
     if (searchValue) {
       router.push(`/search?text=${searchValue}`);
+    } else {
+      router.push(`/`);
     }
   }, [router, searchValue]);
 

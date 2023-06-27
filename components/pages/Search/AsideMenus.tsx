@@ -1,6 +1,5 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import NavLink from "./AsidNavlink";
 
 const AsideMenus = () => {
@@ -11,12 +10,12 @@ const AsideMenus = () => {
   const category = searchParams.get("category");
   const params = new URLSearchParams(searchParams);
 
-  useEffect(() => {
-    if (!category) {
-      params.append("category", "post");
-      router.push(`${pathname}?${params.toString()}`);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!category) {
+  //     params.append("category", "post");
+  //     router.push(`${pathname}?${params.toString()}`);
+  //   }
+  // }, [category, params, pathname, router]);
   return (
     <>
       <NavLink
