@@ -9,10 +9,10 @@ export default function MyprofileLayout({
 }) {
   return (
     <section className="container mt-main-content-gap grid grid-cols-12 mx-auto gap-main-content-gap">
-      <aside className="box_area col-span-12 lg:col-span-3 my-profile-sidebar-class">
+      <aside className="box_area col-span-12 lg:col-span-3 oveflowClass">
         <RootSidebar />
       </aside>
-      <main className="box_area col-span-12 lg:col-span-9 content-bg">
+      <main className="box_area col-span-12 lg:col-span-9 content-bg oveflowClass">
         {children}
       </main>
     </section>
