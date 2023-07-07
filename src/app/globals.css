@@ -15,6 +15,9 @@
   .bgPrimary {
     @apply bg-primary dark:bg-darkMode-contentBG;
   }
+  .colorText {
+    @apply text-secondary-dark dark:text-darkMode-textPrimaryColor;
+  }
 }
 
 :root {
@@ -79,5 +82,8 @@ body {
 }
 /* my-profile-route-specific-class */
 .my-profile-sidebar-class {
-  @apply bg-primary dark:bg-darkMode-contentBG h-[calc(100vh-64px)] overflow-y-auto;
+  @apply bg-primary dark:bg-darkMode-contentBG;
+}
+.oveflowClass {
+  @apply h-[calc(100vh-80px)] overflow-y-auto;
 }

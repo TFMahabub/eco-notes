@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "../../ReduxStore/store";
 import Footer from "../../components/shared/footer/Footer";
 import Navbar from "../../components/shared/navbar/Navbar";
+// import "./";
 import "./globals.css";
 
 export default function RootLayout({
