@@ -10,7 +10,7 @@ const page = () => {
     <section className="container grid grid-cols-3 gap-horizontal">
       <main className="col-span-2 h-screen space-y-common">
         <section className="py-common flex items-center justify-between">
-          <CreateBlogHeader />
+          <CreateBlogHeader setRenderComponent={setRenderComponent} />
         </section>
         <CreateBlogBody renderComponent={renderComponent} />
       </main>
