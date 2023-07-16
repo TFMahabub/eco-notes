@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import BlogFilterSlice from "../features/BlogFilter/BlogFilterSlice";
+import CreateBlogFormSlice from "../features/CreateBlog/CreateBlogSlice";
 import NavBarSlice from "../features/NavbarSlice/NavBarSlice";
 
 export const store = configureStore({
   reducer: {
     BlogFilter: BlogFilterSlice,
     NavbarSlice: NavBarSlice,
+    BlogForm: CreateBlogFormSlice,
   },
 });
 

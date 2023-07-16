@@ -9,13 +9,13 @@ const page = () => {
   const [renderComponent, setRenderComponent] = useState("edit");
   return (
     <section className="container grid grid-cols-3 gap-section-gap">
-      <main className="col-span-2 h-screen space-y-common">
+      <main className="col-span-2 min-h-screen space-y-common">
         <section className="py-common flex items-center justify-between">
           <CreateBlogHeader setRenderComponent={setRenderComponent} />
         </section>
         <CreateBlogBody renderComponent={renderComponent} />
       </main>
-      <aside className="col-span-1 h-screen space-y-common mt-common">
+      <aside className="col-span-1 min-h-screen space-y-common mt-common">
         <AsideContent />
       </aside>
     </section>
