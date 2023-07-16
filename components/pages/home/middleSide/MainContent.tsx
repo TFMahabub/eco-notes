@@ -8,6 +8,11 @@ const MainContent = () => {
       <BlogCart />
       <BlogCart />
       <BlogCart />
+      <BlogCart />
+      <BlogCart />
+      <BlogCart />
+      <BlogCart />
+      <BlogCart />
     </div>
   );
 };
