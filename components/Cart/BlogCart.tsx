@@ -8,7 +8,7 @@ import Bookmark from "../Icons/Bookmark";
 import ChatIcon from "../Icons/ChatIcon";
 import TagCart from "./TagCart";
 
-const BlogCart = () => {
+const BlogCart = ({ blog }: { blog: any }) => {
   return (
     <div className="box_area">
       <div className="flex flex-col md:flex-row md:items-start gap-3">
