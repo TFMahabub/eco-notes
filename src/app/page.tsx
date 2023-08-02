@@ -1,20 +1,14 @@
-"use client";
+import JoinDevCommunity from "@/components/pages/home/leftSide/JoinDevCommunity";
+import PopularTags from "@/components/pages/home/leftSide/PopularTags";
+import WellcomeTextIndex from "@/components/pages/home/leftSide/WellcomeTextIndex";
+import MainContent from "@/components/pages/home/middleSide/MainContent";
+import TopMenus from "@/components/pages/home/middleSide/TopMenus";
+import Discuss from "@/components/pages/home/rightSide/Discuss";
+import Listings from "@/components/pages/home/rightSide/Listings";
 
-import Head from "next/head";
-import JoinDevCommunity from "../../components/pages/home/leftSide/JoinDevCommunity";
-import PopularTags from "../../components/pages/home/leftSide/PopularTags";
-import WellcomeTextIndex from "../../components/pages/home/leftSide/WellcomeTextIndex";
-import MainContent from "../../components/pages/home/middleSide/MainContent";
-import TopMenus from "../../components/pages/home/middleSide/TopMenus";
-import Discuss from "../../components/pages/home/rightSide/Discuss";
-import Listings from "../../components/pages/home/rightSide/Listings";
-
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="min-h-screen">
-      <Head>
-        <title>Homepage</title>
-      </Head>
       <main className="container mt-main-content-gap grid grid-cols-12 gap-4">
         {/* ----------------left-side---------------- */}
         <aside className="col-span-12 lg:col-span-3 space-y-common-.75 order-2 md:order-none">
