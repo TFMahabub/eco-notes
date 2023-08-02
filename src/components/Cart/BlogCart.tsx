@@ -7,6 +7,7 @@ import Link from "next/link";
 import profileImage from "../../../public/assets/profile.jpg";
 import Bookmark from "../Icons/Bookmark";
 import ChatIcon from "../Icons/ChatIcon";
+import { TAG } from "../pages/Blog/Type";
 import TagCart from "./TagCart";
 
 const BlogCart = ({ blog }: any) => {
@@ -41,8 +42,8 @@ const BlogCart = ({ blog }: any) => {
             </Link>
           </div>
           <div className="flex flex-wrap">
-            {blog?.tags?.map((tag: string) => (
-              <TagCart key={tag} tag={tag} />
+            {blog?.tags?.map((tag: TAG) => (
+              <TagCart key={tag?._id} tag={tag} />
             ))}
           </div>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-common">

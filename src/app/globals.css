@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   font-family: "mont", sans-serif;
   scroll-behavior: smooth;
   caret-color: var(--secondary-color);
@@ -46,6 +46,12 @@ body {
 }
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
+}
+.lightTextColor {
+  @apply text-secondary-light dark:text-darkMode-textSecondaryColor;
+}
+.darkTextColor {
+  @apply text-secondary-dark dark:text-darkMode-textPrimaryColor;
 }
 .box_area {
   @apply bgPrimary border box-border-color rounded-common p-common-1;
@@ -82,7 +88,7 @@ body {
 
 /* ---------------specific-tag-class--------------- */
 .navbar-profile-menu-item {
-  @apply flex items-center justify-start gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100 tracking-wide;
+  @apply flex items-center justify-start gap-common px-common-1 py-3 hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100 tracking-wide text-secondary-light dark:text-darkMode-textPrimaryColor;
 }
 /* my-profile-route-specific-class */
 .my-profile-sidebar-class {
