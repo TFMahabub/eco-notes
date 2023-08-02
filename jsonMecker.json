@@ -1,26 +1,50 @@
 [
   {
     "title": "Stop using Swagger-UI and MSW, but SDK instead",
-    "description": "If you're a frontend developer, and have received swagger documents from backend, you may open it on swagger-ui. Reading a swagger documents from swagger-ui, you may implement interaction code with backend server using axios or fetch function. You also need to write DTO (Data Transfer Object) structures looking at JSON schema definitions. Some professional frontend developers even build a mocking backend server through msw for testing. During above processes, you may take a mistake that mis-reading API specs, or mis-writing DTO structures. Also, mocking the backend server with msw, you can misunderstand the real backend server's API specs. As long as front-end developers are human, not robots, these are all common mistakes we see all around us. By the way, such common mistakes sometimes cause serious problems in the real world. At least, such mistakes never be caught by compiler, but only by runtime. The more mistakes we make, the harder it is to catch and debug. Of course, even if there are no mistakes, redundant DTO or fetch function implementation and msw mocking code by hand is very laborious and cumbersome works.",
+    "description": "If you are a frontend developer&comma; and have received swagger documents from backend&comma; you may open it on swagger-ui. Reading a swagger documents from swagger-ui&comma; you may implement interaction code with backend server using axios or fetch function. You also need to write DTO (Data Transfer Object) structures looking at JSON schema definitions. Some professional frontend developers even build a mocking backend server through msw for testing. During above processes&comma; you may take a mistake that mis-reading API specs&comma; or mis-writing DTO structures. Also&comma; mocking the backend server with msw&comma; you can misunderstand the real backend server's API specs. As long as front-end developers are human&comma; not robots&comma; these are all common mistakes we see all around us. By the way&comma; such common mistakes sometimes cause serious problems in the real world. At least&comma; such mistakes never be caught by compiler&comma; but only by runtime. The more mistakes we make&comma; the harder it is to catch and debug. Of course&comma; even if there are no mistakes&comma; redundant DTO or fetch function implementation and msw mocking code by hand is very laborious and cumbersome works.",
     "tags": [{
       "_id": "64ca18cec83c3d0b854ae828",
-      "tag": "react.js",
-      "colorCode": "#00D9FE"
+      "tag": "react.js"
     },
     {
       "_id": "64ca18cec83c3d0b854ae829",
-      "tag": "angular.js",
-      "colorCode": "#E03537"
+      "tag": "angular.js"
     },
     {
       "_id": "64ca18cec83c3d0b854ae82a",
-      "tag": "vue.js",
-      "colorCode": "#47BA87"
+      "tag": "vue.js"
     },
     {
       "_id": "64ca18cec83c3d0b854ae82b",
-      "tag": "express.js",
-      "colorCode": "#868686"
+      "tag": "express.js"
+    }],
+    "likes": 4,
+    "comments": [
+      {
+        "uid": "",
+        "comment": "this is helpful"
+      }
+    ],
+    "postTime": "2023-08-02T03:16:59.251Z"
+  },
+  {
+    "title": "NodeIterator and TreeWalker Web APIs",
+    "description": "Instantiation of these iterators is slower than a normal loop. If you're planning on using it once or a few times, document.querySelectorAll() with a for loop or NodeList methods should suit your needs. Similarly, the more complex your filter, the slower these iterators will be. If you're looking to find a few nodes based on a complex series of CSS selectors, loops will probably be a lot faster. Where NodeIterator and TreeWalker really shine is when you have a use case that requires referencing the collection of nodes repeatedly. They both store a lot of information about the DOM, so that's especially true when you need to know the relationships between nodes. The main thing they offer over other ways to iterate through nodes is a reference to a node. A NodeList may let you access similar information, but you'll still have to find the node you want every time, usually by index. You can use NodeIterator.referenceNode and TreeWalker.currentNode like you would ref.current in React or document.getElementById in vanilla JS. For example, managing a roving tabIndex.",
+    "tags": [{
+      "_id": "64ca18cec83c3d0b854ae828",
+      "tag": "angular.js"
+    },
+    {
+      "_id": "64ca18cec83c3d0b854ae829",
+      "tag": "node.js"
+    },
+    {
+      "_id": "64ca18cec83c3d0b854ae82a",
+      "tag": "vue.js"
+    },
+    {
+      "_id": "64ca18cec83c3d0b854ae82b",
+      "tag": "mongoss.js"
     }],
     "likes": 4,
     "comments": [
