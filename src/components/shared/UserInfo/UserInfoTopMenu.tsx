@@ -16,7 +16,9 @@ const UserInfoTopMenu = () => {
         />
       </div>
       <div>
-        <TextMenuItem>Mahabub Alam</TextMenuItem>
+        <TextMenuItem extraClass="group-hover:underline text-blue">
+          Mahabub Alam
+        </TextMenuItem>
         <TextExtraSmall>Premium Member</TextExtraSmall>
       </div>
     </>

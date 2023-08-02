@@ -41,7 +41,7 @@ const BigScreenMenus = ({ user }: { user: boolean }) => {
       <div
         className={`hidden ${
           profileMenu
-            ? "md:flex flex-col items-center gap-common-.75 absolute top-9 right-7 w-72 h-80 bg-primary dark:bg-darkMode-contentBG overflow-y-auto border box-border-color rounded-lg"
+            ? "md:flex flex-col items-center gap-common-.75 absolute top-9 right-7 w-56 bg-primary dark:bg-darkMode-contentBG overflow-y-auto border box-border-color rounded-lg"
             : "md:hidden"
         }`}
       >

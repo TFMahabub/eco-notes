@@ -14,6 +14,25 @@
 <br>
 [admin-panel-git-repo-link](https://github.com/TFMahabub/eco-notes-admin-cli).
 
+## Technology
+
+![Static Badge](https://img.shields.io/badge/typeScript-100%25-007ACC)
+![Static Badge](https://img.shields.io/badge/javaScript-100%25-EFD81D)
+![Static Badge](https://img.shields.io/badge/tailwindCSS-100%25-38BDF8)
+![Static Badge](https://img.shields.io/badge/React.js-100%25-00DDFF)
+![Static Badge](https://img.shields.io/badge/Next.js-100%25-383838)
+![Static Badge](https://img.shields.io/badge/Redux-80%25-764ABC)
+![Static Badge](https://img.shields.io/badge/Node.js-70%25-89BB5A)
+![Static Badge](https://img.shields.io/badge/Express.js-50%25-868686)
+![Static Badge](https://img.shields.io/badge/mongoDB-60%25-086341)
+
+![Static Badge](https://img.shields.io/badge/VS_Code-100%25-2B8DCC)
+![Static Badge](https://img.shields.io/badge/Git-100%25-F05539)
+![Static Badge](https://img.shields.io/badge/Github-100%25-383838)
+![Static Badge](https://img.shields.io/badge/Vite-100%25-9F5BFE)
+![Static Badge](https://img.shields.io/badge/EsLint-100%25-4A2EC4)
+![Static Badge](https://img.shields.io/badge/airbnb_code_format-100%25-FF5F64)
+
 ## Description
 
 This is a simple admin panel for a blog posting web applications. I make this site with React.js. Admin can manege his web applications with this admin panel.
@@ -73,25 +92,6 @@ The last section of a good README is a license. This lets other developers know 
 ---
 
 🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Technology
-
-![Static Badge](https://img.shields.io/badge/typeScript-100%25-007ACC)
-![Static Badge](https://img.shields.io/badge/javaScript-100%25-EFD81D)
-![Static Badge](https://img.shields.io/badge/tailwindCSS-100%25-38BDF8)
-![Static Badge](https://img.shields.io/badge/React.js-100%25-00DDFF)
-![Static Badge](https://img.shields.io/badge/Next.js-100%25-383838)
-![Static Badge](https://img.shields.io/badge/Redux-80%25-764ABC)
-![Static Badge](https://img.shields.io/badge/Node.js-70%25-89BB5A)
-![Static Badge](https://img.shields.io/badge/Express.js-50%25-868686)
-![Static Badge](https://img.shields.io/badge/mongoDB-60%25-086341)
-
-![Static Badge](https://img.shields.io/badge/VS_Code-100%25-2B8DCC)
-![Static Badge](https://img.shields.io/badge/Git-100%25-F05539)
-![Static Badge](https://img.shields.io/badge/Github-100%25-383838)
-![Static Badge](https://img.shields.io/badge/Vite-100%25-9F5BFE)
-![Static Badge](https://img.shields.io/badge/EsLint-100%25-4A2EC4)
-![Static Badge](https://img.shields.io/badge/airbnb_code_format-100%25-FF5F64)
 
 ## Features
 

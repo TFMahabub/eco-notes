@@ -82,7 +82,7 @@ body {
 
 /* ---------------specific-tag-class--------------- */
 .navbar-profile-menu-item {
-  @apply flex items-center justify-start gap-common px-common-1 py-common hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100 tracking-wide;
+  @apply flex items-center justify-start gap-common px-common-1 py-3 hover:bg-secondary-dark/10 dark:hover:bg-primary/10 transform transition ease-linear duration-100 tracking-wide text-primary dark:text-darkMode-textPrimaryColor;
 }
 /* my-profile-route-specific-class */
 .my-profile-sidebar-class {
