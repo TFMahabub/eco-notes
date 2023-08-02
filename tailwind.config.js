@@ -32,6 +32,12 @@ module.exports = {
       textHover: {
         dark: '#3B49DF',
         light: '#3B49DF'
+      },
+      tag: {
+        react: '#00D9FE',
+        angular: '#E03537',
+        vue: '#47BA87',
+        express: '#868686'
       }
     },
     extend: {

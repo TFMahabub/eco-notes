@@ -1,7 +1,13 @@
-const TagCartBig = ({ tag }: { tag: string }) => {
+import { useTagsColor } from "../hooks/useTagsColor";
+import { TAG } from "../pages/Blog/Type";
+
+const TagCartBig = ({ tag }: { tag: TAG }) => {
+  const colorClass = useTagsColor(tag.tag);
   return (
-    <p className="px-[6px] py-[1px] hover:bg-technologyColor-react/10 border border-primary/0 hover:border-technologyColor-react rounded-md text-technologyColor-react common-duration cursor-pointer text-lg group common-duration">
-      # <span className="small-text-color">{tag}</span>
+    <p
+      className={`px-[6px] py-[1px] border ${colorClass} rounded-md common-duration cursor-pointer text-lg group common-duration`}
+    >
+      # <span className="small-text-color">{tag?.tag}</span>
     </p>
   );
 };
