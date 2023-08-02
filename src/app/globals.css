@@ -47,6 +47,12 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
+.lightTextColor {
+  @apply text-secondary-light dark:text-darkMode-textPrimaryColor;
+}
+.darkTextColor {
+  @apply text-secondary-dark dark:text-darkMode-textPrimaryColor;
+}
 .box_area {
   @apply bgPrimary border box-border-color rounded-common p-common-1;
 }
