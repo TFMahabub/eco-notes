@@ -37,7 +37,9 @@ module.exports = {
         react: '#00D9FE',
         angular: '#E03537',
         vue: '#47BA87',
-        express: '#868686'
+        express: '#868686',
+        node: '#87CF30',
+        mongoos: '#8C0808',
       }
     },
     extend: {
