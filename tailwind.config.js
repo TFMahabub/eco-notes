@@ -32,9 +32,6 @@ module.exports = {
       textHover: {
         dark: '#3B49DF',
         light: '#3B49DF'
-      },
-      technologyColor: {
-        react: '#00D9FE'
       }
     },
     extend: {

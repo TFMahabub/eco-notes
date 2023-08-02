@@ -1,3 +1,9 @@
 export interface DynamicID {
-    dynamicID: string
+  dynamicID: string;
+}
+
+export interface TAG {
+  _id: string;
+  tag: string;
+  colorCode: string;
 }

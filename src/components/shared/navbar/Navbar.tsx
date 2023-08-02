@@ -1,7 +1,6 @@
 "use client";
 import { setHamburgerMenu } from "@/redux/NavbarSlice/NavBarSlice";
 import { RootState } from "@/redux/store";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import HamburgerMenu from "../../Icons/HamburgerMenu";
@@ -59,4 +58,6 @@ const Navbar = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Navbar), { ssr: false });
+export default Navbar;
+
+// export default dynamic(() => Promise.resolve(Navbar), { ssr: false });

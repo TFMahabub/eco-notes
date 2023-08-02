@@ -58,8 +58,8 @@ const UserProfilePage = () => {
           {/* ----------------Down-part---------------- */}
           <div className="mx-auto max-w-4xl flex gap-section-gap">
             {/* ----------------Skils/Languages-part---------------- */}
-            <article className="bg-primary w-full p-3 rounded-lg space-y-3">
-              <h4 className="text-lg font-semibold lightTextColor">
+            <article className="bg-primary dark:bg-darkMode-contentBG w-full p-3 rounded-lg space-y-3">
+              <h4 className="text-lg font-semibold darkTextColor">
                 Skill/Languages
               </h4>
               <hr className="h-[1px] w-full text-secondary-light/20" />
@@ -68,8 +68,8 @@ const UserProfilePage = () => {
                 Styled-Component, React.js, Next.js, Redux, RTK Query,
               </p>
             </article>
-            <article className="bg-primary w-full p-3 rounded-lg">
-              <h4 className="text-lg font-semibold lightTextColor">
+            <article className="bg-primary dark:bg-darkMode-contentBG w-full p-3 rounded-lg">
+              <h4 className="text-lg font-semibold darkTextColor">
                 Skill/Languages
               </h4>
             </article>
