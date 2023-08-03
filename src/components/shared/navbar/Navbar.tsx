@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <Logo className="w-11 h-11 fill-secondary-dark dark:fill-primary" />
             </Link>
-            <div className="flex items-center py-[2px] md:py-1 px-common-.75 rounded-common border border-color gap-common w-36 md:w-full">
+            <div className="flex items-center py-[2px] md:py-1 px-common-.75 rounded-common border border-border-dark/60 dark:border-border-light/60 gap-common w-36 md:w-full">
               <SearchBar />
             </div>
           </div>
