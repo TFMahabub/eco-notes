@@ -87,11 +87,6 @@ const LoginPage = () => {
               </p>
             </button>
           </div>
-          {/* <p className="lightTextColor text-sm">
-            By joining, you agree to the Fiverr Terms of Service and to
-            occasionally receive emails from us. Please read our Privacy Policy
-            to learn how we use your personal data.
-          </p> */}
         </div>
       </div>
     </section>
