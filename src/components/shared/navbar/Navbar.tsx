@@ -16,7 +16,7 @@ const Navbar = () => {
   );
   const dispatch = useDispatch();
 
-  const user = true;
+  const user = false;
   return (
     <section
       className={`bg-primary dark:bg-darkMode-contentBG border-b box-border-color md:flex md:items-center md:justify-between md:h-navbar-height py-common-1 md:py-0`}
